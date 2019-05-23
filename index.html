@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Sign Up Form</title>
+            <meta charset="utf-8">
+            <!-- CSS's bootstrap -->
+            
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <!-- JavaScripte's bootstrap -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" async></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" async></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"> async</script>
+            <!-- My CSS -->
+            <link rel="stylesheet" href="includes/styles.css">
+           
+        </head>
+        <body>
+                <h1 class="ribbon">
+                        <strong class="ribbon-content"><h1 class="h1Main">Welcome to the page<br>Fill in the form</h1> </strong>
+                </h1>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                
+                
+            <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">
+                <div class="warpper">
+                <section class="textLabel">
+                    <div class="form-group">
+                        <label class="textLabellabel run-animation">E-Mail: <br>
+                        <input type="email" name="mail" value="" placeholder="Ayman@example.com" class="form-control input-lg run-animation" required></label><br>
+                        <label class="textLabellabel run-animation">Password: <br>
+                        <input type="password" name="pass" value="" placeholder="Password" class="form-control input-lg run-animation" required></label><br>
+                        <label class="textLabellabel run-animation">Full Name:<br>
+                        <input type="text"name="fullName" value= "" placeholder="Ayman Wahbani" class="form-control input-lg run-animation" required></label><br>
+                        <label class="textLabellabel run-animation" required>Gender: <br>
+                        <input type="radio" name="gender" value="Male" class="run-animation" required ><label class="run-animation">Male</label>
+                        <input type="radio" name="gender" value="Female" class="run-animation" required><label class="run-animation">Female</label></label><br>
+                        <label class="textLabellabel run-animation">Age: </label><br>
+                        <input type="number" name="age" value="15" min="7" max="66" class="form-control input-lg run-animation" required><br>
+                        <label class="textLabellabel run-animation">Phone:</label><br>
+                        <input type="tel" name="phone" value=""  pattern="^[0-9-+s()*]*$" placeholder="012-345-6789" class="form-control input-lg run-animation"><br>
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                <section class="textInput">
+                    <label class="textInputlabel run-animation1">Zip: </label><br>
+                        <input type="text"  name="address" value="" class="form-control input-lg run-animation1" required><br>
+                    <label class="textInputlabel run-animation1">Website: </label><br>
+                    <input type="url" name="website" value="" placeholder="https://www.example.com" class="form-control input-lg run-animation1" ><br>
+                    <label class="textInputlabel run-animation1">Coffee: <br>
+                    <select name="coffee" class="form-control input-lg run-animation1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="20">2</option>
+                        <option value="21">3</option>
+                        <option value="22">4</option>
+                        <option value="23">5</option>
+                        <option value="18">6</option>
+                    </select></label><br>
+                    <label class="textInputlabel run-animation1">Temperature: </label><br>
+                    <input  type="range" name="temper" value="50" min="0" max="100" class="run-animation1"><br><b class="run-animation1">0c</b><b class="Right run-animation1">100c</b><br>
+                    <label class="textInputlabel run-animation1">Hobbies: </label><br>
+                    <input type="checkbox" name="interests[]" value="Music" class="run-animation1"> <label class="run-animation1" required>Music</label>
+                    <input type="checkbox" name="interests[]" value="Anime" class="run-animation1"> <label class="form-check-label run-animation1">Anime</label>
+                    <input type="checkbox" name="interests[]" value="Manga" class="run-animation1"> <label class="form-check-label run-animation1">Manga</label>
+                    <input type="checkbox" name="interests[]" value="Sport" class="run-animation1"> <label class="form-check-label run-animation1">Sport</label><br><br>
+                    
+                    
+                </section>
+                 <div class="clear"></div>
+                    <button type="submit" class="form-control input-lg btn btn-primary btnSub run-animation2">שלח</button>
+            </form>
+            <footer>
+           
+                </div>
+                <div class="vampire-box">
+                        <div class="vampire-box__bg">
+                            <span class="moon"> </span>
+                            <span class="bat bat--one">
+                                <span class="bat__left-wing"> </span>
+                                <span class="bat__body"> </span>
+                                <span class="bat__right-wing"> </span>
+                            </span>
+                            <span class="bat bat--two">
+                                <span class="bat__left-wing"> </span>
+                                <span class="bat__body"> </span>
+                                <span class="bat__right-wing"> </span>
+                            </span>
+                            <span class="bat bat--three">
+                                <span class="bat__left-wing"> </span>
+                                <span class="bat__body"> </span>
+                                <span class="bat__right-wing"> </span>
+                            </span>
+                            <span class="bat bat--four">
+                                <span class="bat__left-wing"> </span>
+                                <span class="bat__body"> </span>
+                                <span class="bat__right-wing"> </span>
+                            </span>
+                            <span class="vampire">
+                                <span class="vampire__hair">
+                                    <span class="hair__one"></span>
+                                    <span class="hair__two"></span>
+                                    <span class="hair__three"></span>
+                                </span>
+                                <span class="vampire__face">
+                                    <span class="eyes eyes--left">
+                                        <span class="eyes__red"> 
+                                            <span class="eyes__black"></span>
+                                        </span>
+                                    </span>
+                                    <span class="eyes eyes--right">
+                                        <span class="eyes__red">
+                                            <span class="eyes__black"></span>
+                                        </span>
+                                    </span>
+                                    <span class="vampire__nose"></span>
+                                    <span class="vampire__nose vampire__nose--second"> </span>
+                                    <span class="vampire__mouth">
+                                        <span class="lip lip--top">		
+                                                <span class="upper-lip upper-lip--left"> </span>
+                                                <span class="upper-lip upper-lip--right"> </span>
+                                        </span>
+                                        <span class="teeth"> 
+                                            <span class="left--teeth"> </span>
+                                            <span class="right--teeth"> </span>
+                                        </span>	 
+                                        <span class="lip lip--bottom"></span>						
+                                   </span>
+                                    <span class="vampire__neck"></span>
+                                    <span class="vampire__neck vampire__neck--second"></span>
+                            </span>
+                            <span class="vampire__shoulders"> </span>
+                            <span class="vampire__dress"> </span>
+                            <span class="vampire__dress vampire__dress--right"> </span>
+                            <span class="blood"> 
+                                <span class="blood__drop"> </span>
+                                <span class="blood__drop blood__drop--second"> </span>
+                                <span class="blood__drop blood__drop--third"> </span>
+                            </span>        
+                        </div>                        
+                    </div>
+                </footer>
+        </body>
+    </html>

@@ -1,0 +1,919 @@
+* {margin: 0;padding: 0;}
+
+header,nav,main,section,footer,aside,article
+{display : block;}
+/* for php */
+.wrapperphp{
+  margin: 0 auto;width:10%;
+}
+/* for html (index+login) */
+.textLabel{float: left; margin-left: 100px;}
+.textLabellabel{margin-top: 10px;}
+.textInput{position: relative;float: left;margin-left: 100px;}
+.textInputlabel{margin-top: 40px;}
+.clear{clear: both;}
+.Right{margin-left: 100px;}
+.h1Main {
+  -webkit-text-stroke: 1px black;
+  color: white;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+.ribbon {
+    font-size: 16px !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+   
+    width: 50%;
+       
+    position: relative;
+    background: #ba89b6;
+    color: #fff;
+    text-align: center;
+    padding: 1em 2em; /* Adjust to suit */
+    margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+   }
+   .ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #986794;
+    z-index: -1;
+   }
+   .ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+   }
+   .ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+   }
+   .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #804f7c transparent transparent transparent;
+    bottom: -1em;
+   }
+   .ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+   }
+   .ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+   }
+
+   /* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: green;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.btnSub{
+    margin-top: 50px;
+}
+
+/* PRESENTATIONAL STYLES */
+body {
+  background: #333;
+  color: #fff;
+
+}
+
+form {
+  margin: 100px auto;
+  width: 50%;
+}
+
+
+.svg-container {
+  padding-bottom:67.3205033%;
+  position:relative
+}
+.svg-container__content {
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden
+}
+.svg-container__content svg {
+  width:100%;
+  height:100%
+}
+
+#page-wrap { width: 960px; margin: 80px auto; }
+
+.run-animation {
+  position: relative;
+  -webkit-animation: fancy-animation 2s ease;
+ }
+
+ @-webkit-keyframes fancy-animation {
+
+   from {
+       left: -1000px;
+   }
+   to {
+       left: 0;
+   }
+
+ }
+ .run-animation1 {
+  position: relative;
+  -webkit-animation: fancy-animation1 2s ease;
+ }
+
+ @-webkit-keyframes fancy-animation1 {
+
+   from {
+       left: 1000px;
+   }
+   to {
+       left: 0;
+   }
+
+ }
+
+ .run-animation2 {
+  position: relative;
+  -webkit-animation: fancy-animation2 2s ease;
+ }
+
+ @-webkit-keyframes fancy-animation2 {
+
+   from {
+       top: 1000px;
+   }
+   to {
+       top: 0;
+   }
+
+ }
+
+ .eye {
+  height:30px; 
+  width:20%;
+  top:45%;
+  background:#bada55;
+  position:absolute;
+  box-shadow:0px 0px 20px #bada55;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation:glow 15s ease-in-out infinite;
+  -moz-animation: glow 15s ease-in-out infinite;
+  -o-animation: glow 15s ease-in-out infinite;
+  animation: glow 15s ease-in-out infinite;
+}
+
+.eye:nth-of-type(1) {
+  border-radius:5% 75% 0 100%;
+  left:25%;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.eye:nth-of-type(2) {
+  border-radius:75% 5% 100% 0;
+  right:25%;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+
+@-webkit-keyframes glow {
+  0%   { opacity: .8; box-shadow:0px 0px 20px #bada55;height:30px;}
+25% { opacity: 1; box-shadow:0px 0px 30px #bada55; height:35px; }
+50% { opacity: 1; box-shadow:0px 0px 40px #bada55; height:35px; top:45%;}
+52% { opacity: 1; box-shadow:0px 0px 40px #bada55; height:5px; height:7px; top:48%; }
+55% { opacity: 1; box-shadow:0px 0px 40px #bada55; height:30px;top:45%;}
+100% { opacity: .8; }
+}
+@-moz-keyframes glow {
+  0%   { opacity: .8; box-shadow:0px 0px 20px #bada55;height:30px;}
+25% { opacity: 1; box-shadow:0px 0px 30px #bada55; height:35px; }
+50% { opacity: 1; box-shadow:0px 0px 40px #bada55; height:35px; top:45%;}
+52% { opacity: 1; box-shadow:0px 0px 40px #bada55; height:5px; height:7px; top:48%; }
+55% { opacity: 1; box-shadow:0px 0px 40px #bada55; height:30px;top:45%;}
+100% { opacity: .8; }
+}
+@-o-keyframes glow {
+  0%   { opacity: .8; box-shadow:0px 0px 20px #bada55;height:30px;}
+25% { opacity: 1; box-shadow:0px 0px 30px #bada55; height:35px; }
+50% { opacity: 1; box-shadow:0px 0px 40px #bada55; height:35px; top:45%;}
+52% { opacity: 1; box-shadow:0px 0px 5px #bada55; height:3px; height:7px; top:48%; }
+55% { opacity: 1; box-shadow:0px 0px 40px #bada55; height:30px;top:45%;}
+100% { opacity: .8; }
+}
+@keyframes glow {
+  0%   { opacity: .8; box-shadow:0px 0px 20px #bada55;height:30px;}
+25% { opacity: 1; box-shadow:0px 0px 30px #bada55; height:35px; }
+50% { opacity: 1; box-shadow:0px 0px 40px #bada55; height:35px; top:45%;}
+52% { opacity: 1; box-shadow:0px 0px 40px #bada55; height:5px; height:7px; top:48%; }
+55% { opacity: 1; box-shadow:0px 0px 40px #bada55; height:30px;top:45%;}
+100% { opacity: .8; }
+}
+ 
+span{position: absolute; display: inline-block;}
+    
+body{
+    margin: 0;
+
+}
+.vampire-box{
+    border: none;
+    position: relative;  
+    
+ 
+}
+.vampire-box__bg{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    position: relative;
+    background-color: #22304D;
+    background: linear-gradient(to bottom, #111a2d,#5E7B9B);
+    background: -webkit-linear-gradient(to bottom, #111a2d,#5E7B9B);
+    background: -o-linear-gradient(to right, #111a2d,#5E7B9B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -moz-linear-gradient(to bottom, #111a2d,#5E7B9B);
+    box-shadow: inset 0 0 33px #04032B;
+    z-index: 99999999;
+}
+
+
+    .moon{
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color: #fff;
+        box-shadow:  0 0 5px white, 0 0 10px #1E2D49, 0 0 90px white;
+        top: 70px;
+        left: 340px;
+        
+    }
+    .bat{
+        left: 300px;
+        top:160px;}
+        .bat__left-wing{
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 60px solid #131313;
+            position: absolute; 
+            bottom: -10px;
+            left: 40px;
+            transform: rotate(-60deg);
+            transform-origin: right bottom;
+            left: 56px;
+            bottom: 14px;
+            transition: all ease 0.7s;
+            animation: leftwing 0.7s linear infinite alternate;
+        }
+        .bat__body{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 80%;
+            background-color: #131313;
+            left: 70px;
+            bottom: 5px;}
+            .bat_body:before{
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-bottom: 10px solid #131313;
+                transform: rotate(0deg);
+                position: absolute;
+                left: 2px;
+                top: -5px;
+            }
+            .bat_body:after{
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-bottom: 10px solid #131313;
+                transform: rotate(0deg);
+                position: absolute;
+                left: 9px;
+                top: -5px;
+            }
+        .bat__right-wing{
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 60px solid #131313;
+            transform: rotate(60deg);
+            position: absolute;
+            left: 100px;
+            bottom:-10px;
+            transform-origin: left bottom;
+            left: 82px;
+            bottom: 15px;
+            transition: all ease 0.7s;
+             animation: rightwing 0.7s linear infinite alternate;
+        }
+        
+    
+    .bat--two{
+          left: 22px;
+         top: 110px;  
+        
+        }
+    .bat--three{
+          left: 213px;
+         top: 126px; 
+          animation: shake 0.7s linear infinite alternate; 
+        }
+    .bat--four{
+            left: 116px;
+            top: 84px;
+        }
+    
+    .vampire{
+        top: 92px;
+        left: -12px;}
+        .vampire__hair{
+            background-color:#212129;
+            width: 126px;
+            height: 200px;
+            border-radius: 100px 100px 10px 10px;
+            left: 200px;
+            top: 200px;
+            overflow: hidden;}
+            .hair__one{
+                    top: 5px;
+                    left: -4px;
+                    width: 97px;
+                    height: 30px;
+                    /* background: #26262E; */
+                    background-color: #212129;
+                    border-radius: 100%;
+                    transform: rotate(-50deg);
+                    z-index: 5;
+                }
+             
+            .hair__two{
+                    top: 8px;
+                    left: 54px;
+                    width: 116px;
+                    height: 44px;
+                    /* // background: #26262E; */
+                    background-color: #212129;
+                    border-radius: 100%;
+                    transform: rotate(32deg);   
+                    z-index: 5;              
+            }
+            .hair__three{
+                top: 22px;
+                left: 27px;
+                width: 66px;
+                height: 18px;
+                background-color: #212129;
+                border-radius: 100%;
+                transform: rotate(133deg);
+                z-index: 5;            
+            }    
+        
+        .vampire__face{
+            background-color: #DBDBDB;
+            box-shadow: 0 0 3px  #212129;
+            width: 80px;
+            height: 106px;
+            border-radius: 50px;
+            top: 219px;
+            left: 224px;
+            z-index: 3;}
+            .eyes{
+                width: 24px;
+                height: 20px;
+                border-radius: 0 50px 0 50px;
+                background-color: #fff;
+                box-shadow: 0 0 14px 5px #04032B;
+            }.eyes--left{ 
+                    top: 38px;
+                    transform: scale(1,1,1);
+                    transform: rotate(-18deg);
+                    -ms-transform-origin-y: 100%;
+                    -webkit-transform-origin-y: 100%;
+                    left: 8px;
+             } .eyes__red{
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: #81180F;                  
+                        top: 3px;
+                        left: 4px;
+                        box-shadow: 0 0 6px 2px #81180F; 
+             }.eyes__black{
+                            width: 8px;
+                            height: 6px;
+                            border-radius: 0 50px 0 50px;
+                            background-color: #000;
+                            transform: rotate(255deg);
+                            top: 4px;
+                            left: 3px;  
+                        }
+                                    
+              
+                .eyes--right{
+                    top: 23px;
+                    left: 42px;
+                    transform: scale(1,1,1);
+                    transform: rotate(120deg);
+                    -ms-transform-origin-y: 100%;
+                    -webkit-transform-origin-y: 100%;}
+                    .eyes__red{
+                        top: 3px;
+                        left:5px;
+                        background-color: #81180F; 
+                        width: 15px;
+                        height: 15px;  
+                        border-radius: 50%; 
+                        box-shadow: 0 0 6px 2px #81180F;}  
+                        .eyes__black{
+                            width: 8px;
+                            height: 6px;
+                            border-radius: 0 50px 0 50px;
+                            background-color: #000;
+                            transform: rotate(290deg);
+                            top: 4px;
+                            left: 3px; 
+                        }             
+                        
+                    
+                
+                            .vampire__nose{   
+                height: 14px;
+                width: 12px;
+                top: 58px;
+                left: 25px;
+                border-bottom-right-radius: 25%;
+                border-top-right-radius: 24%;
+                border: 1px solid #AFAFAF;
+                border-left: transparent;
+                border-top: transparent;
+                border-bottom: transparent;
+                            }.vampire__nose--second{
+                    height: 14px;
+                    width: 12px;
+                    top: 58px;
+                    left: 42px;
+                    border-bottom-right-radius: 25%;
+                    border-top-right-radius: 24%;
+                    border: 1px solid #AFAFAF;
+                    border-left: transparent;
+                    border-top: transparent;
+                    border-bottom: transparent;
+                    transform: rotate(180deg);
+                }  
+
+             .lip--top{
+                    top: 8px;
+                    left: 0px;
+                } 
+                .upper-lip{
+                    border-bottom: 10px solid #880901;
+                    border-left: 20px solid transparent;
+                    border-top-right-radius: 100%;
+                    height: 0px;
+                    width: 0px;
+                    z-index: 3;
+                }.upper-lip:before{
+                        content: ' ';
+                        width: 0;
+                        height: 0;
+                        border-left: 4px solid transparent;
+                        border-right: 4px solid transparent;
+                        border-bottom: 10px solid #929290;
+                        transform: rotate(180deg);
+                        position: absolute;
+                        left: 4px;
+                        top: 9px;
+                        z-index: 9;
+                    }
+                    .upper-lip--left{
+                        top: 70px;
+                        left: 21px;
+                    }
+                    .upper-lip--right{
+                        top: 70px;
+                        left: 41px;
+                        transform: rotateY(180deg);                   
+                    }
+                
+                .lip--bottom{
+                 width: 38px;
+                 height: 8px;
+                 background-color: #880901;
+                 border-top-left-radius: 80px;
+                 border-top-right-radius: 80px;
+                 border-bottom: 0;
+                 transform: rotate(180deg);
+                 top:87px;
+                 left:22px;
+
+                  
+            }
+
+        
+        .vampire__neck{
+            height: 40px;
+            width: 40px;
+            background-color: #DBDBDB;
+            top: 90px;
+            left: 20px;
+            z-index: -1;
+            
+
+        }
+    .vampire__shoulders{
+        height: 120px;
+        width: 120px;
+        background-color: #DBDBDB;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        top: 343px;
+        left: 205px;
+    }
+    .vampire__dress{
+        border-bottom: 56px solid #880901;
+        border-left: 113px solid transparent;
+        border-top-right-radius: 10px;
+        height: 0px;
+        width: 0px;
+        top: 350px;
+        left: 212px;}
+    
+  .vampire__dress--right{
+            border-bottom: 56px solid #880901;
+            border-right: 113px solid transparent;
+            border-top-left-radius: 10px;
+            height: 0px;
+            width: 0px;
+            top: 350px;
+            left: 204px;
+            border-left: none;
+        }
+    
+    .blood{       
+        background-color: #481620;
+        z-index: 3;}
+        .blood__drop{
+            width: 5px;
+            height: 5px;
+            border: none;
+            border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+            background-color: #481620;
+            left: 243px;
+            top: 306px;
+            transform: rotateZ(-30deg);
+           transform-origin: top;
+          animation: leftdrip 5s linear infinite alternate; 
+        }.blood__drop--second{
+                left: 280px;
+                top: 306px;  
+                transform-origin: top;
+               animation: middledrip 5s linear infinite alternate; 
+            }  
+            .blood__drop--third{
+                left: 260px;
+                top: 314px;  
+                transition: 5s infinite ease;  
+                animation: rightdrip 5s linear infinite alternate; 
+              transform-origin: top;
+            
+
+    
+}
+    
+
+    
+ @keyframes leftwing{
+     0% {
+         transform: rotate(-25deg);
+
+     }
+     100% {
+         transform: rotate(-60deg);
+     }
+ }
+
+@keyframes rightwing{
+   0% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform:rotate(60deg);
+    }
+}
+
+@keyframes leftdrip {
+  from{
+   transform: scaley(1)
+  } 
+  to{
+    transform: scaley(18);
+  }
+   
+}
+@keyframes middledrip {
+  from{
+   transform: scaley(1)
+  } 
+  to{
+    transform: scaley(18);
+  }
+}
+@keyframes rightdrip {
+    from{
+		transform: scaley(1);
+
+	}
+	to{
+		transform: scaley(18);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- background & lightning --------------- */
+
+.halloween-scene{
+  position:absolute;
+    background:#283747;
+  animation-name: lightning;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+ animation-direction: normal, reverse; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards; 
+ animation-delay: 0.5s,1s;
+}
+
+#moon{
+  width:70px;
+  height:70px;
+  drop-shadow:inset 5px 5px 5px #867747;
+}
+/* --------------- witch --------------- */
+#witch {
+   animation-name: bounce;
+   animation-duration: 10s;
+  animation-iteration-count: infinite;
+ animation-direction: normal; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards; 
+ animation-delay: 0.50s;
+}
+#witch-glow{
+  animation-name: bounce;
+   animation-duration: 10s;
+  animation-iteration-count: infinite;
+ animation-direction: normal; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards; 
+ animation-delay: 0.51s;
+}
+.witch-glow{
+  fill:#FDDB1E;
+}
+.witch-shoe-back{
+  animation-name: bounce-leg;
+   animation-duration: 3s;
+  animation-iteration-count: infinite;
+ animation-direction: normal; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards; 
+ animation-delay: 0.6s;
+}
+.witch-hat{
+  animation-name:hat-animation ;
+   animation-duration: 3s;
+  animation-iteration-count: infinite;
+ animation-direction: normal; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards; 
+ animation-delay: 0.6s;
+}
+.witch-hair{
+  animation-name: wavy-hair;
+   animation-duration: 3s;
+  animation-iteration-count: infinite;
+ animation-direction: normal; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards;
+  animation-delay: -0.5s;
+}
+.witch-shoe-front{
+  animation-name: bounce-leg;
+   animation-duration: 3s;
+  animation-iteration-count: infinite;
+ animation-direction: normal; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards;
+  animation-delay: -0.5s;
+}
+@keyframes wavy-hair{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-5deg);
+  }
+  100%{
+    transform:rotate(0deg);
+  }
+}
+
+@keyframes hat-animation{
+  0%,100%{
+    transform:rotate(0deg) translate(0, 0);
+    transform-origin:0% 0%;
+  }
+  50%{
+    transform:rotate(-15deg) translate(10px,-20px);
+    transform-origin:100% 100%;
+  }
+}
+
+@keyframes bounce-leg{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(2deg);
+  }
+  100%{
+    transform:rotate(0deg);
+  }
+}
+
+@keyframes bounce {
+  0%{
+    opacity:0;
+    transform:translate(0%);
+  }
+  5%{
+    opacity:1;
+    transform:translate(0%);
+  }
+  10%,30%,50%,70%,90%{
+    transform: rotate(0deg);
+  }
+  20%,40%,60%,80%{
+    transform: rotate(2deg);
+  }
+  97%,100%{
+    transform:translate(300%);
+  }
+}
+
+/* --------------- witch-end --------------- */
+
+/* --------------- wolf --------------- */
+.wolf-ear{
+  animation-name: ear;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+ animation-direction: normal, reverse; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards; 
+ animation-delay: 0.5s;
+}
+
+.wolf-head{
+  animation-name: howl;
+   animation-duration: 10s;
+  animation-iteration-count: infinite;
+ animation-direction: normal, reverse; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards; 
+ animation-delay: 0.5s;
+}
+
+@keyframes howl{
+  0%,30%,100%{
+    transform: rotate(-45deg) translate(10px,-18px); 
+    transform-origin:100% 100%;
+  }
+  40%,97%{
+    transform: rotate(0deg); 
+    transform-origin:100% 100%;
+  }
+}
+
+@keyframes ear{
+  0%,50%,100%{
+    transform: rotate(-75deg) translate(2px,-10px); 
+    transform-origin:50% 50%;
+  }
+  75%,97%{
+    transform: rotate(0deg) translate(4px,10px); 
+    transform-origin:100% 100%;
+  }
+}
+
+/* --------------- wolf-end --------------- */
+
+/* --------------- lightning --------------- */
+
+.lightning1{
+  transform:translate(50px,150px);
+  animation-name: lightning;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+ animation-direction: normal, reverse; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards; 
+ animation-delay: 0.5s;
+}
+
+.lightning2{
+  animation-name: lightning;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+ animation-direction: normal, reverse; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards; 
+ animation-delay: 1s;
+}
+
+@keyframes lightning{
+  0%,15%,40%,45%,80%,100%{
+    stroke:#283747;
+    background:#283747;
+  }
+  2%,10%,35%,43%{
+    stroke:#fff;
+    background:#34495E;
+  }
+}
+
+/* --------------- lightning-end --------------- */
+
+/* --------------- ghost --------------- */
+.ghost{
+  animation-name: ghost-appearance;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+ animation-direction: normal, reverse; 
+ animation-timing-function: ease-in; 
+ animation-fill-mode: forwards; 
+ animation-delay: 0.5s,1s;
+}
+
+@keyframes ghost-appearance{
+  0%,15%,40%,45%,80%,100%{
+    opacity:1;
+  }
+  2%,10%,35%,43%{
+    opacity:0;
+  }
+}
+
+/* --------------- ghost-end --------------- */
